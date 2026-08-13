@@ -7,12 +7,20 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "bun index.js",
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "bunx eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/bun": "latest",
-    "@types/express": "^5.0.6",
-    "prettier": "^3.9.6"
+    "eslint": "^10.8.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.11.0",
+    "prettier": "^3.9.6",
+    "typescript-eslint": "^8.67.0"
   },
   "private": true,
   "peerDependencies": {
