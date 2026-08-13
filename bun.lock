@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "npmpackagetoolchain",
+      "name": "bunpackagetoolchain",
       "dependencies": {
         "express": "^5.2.1",
       },
