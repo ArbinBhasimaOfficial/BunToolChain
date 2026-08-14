@@ -1,4 +1,8 @@
-# bun package toolchain
+# pnpm package toolchain
+
+A JavaScript project managed with **[pnpm](https://pnpm.io)** and running on **Bun** / **Node.js**.
+
+## Getting Started
 
 To install dependencies:
 
@@ -6,23 +10,44 @@ To install dependencies:
 pnpm install
 ```
 
-To run:
+To start :
 
 ```bash
 pnpm start
 ```
 
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
-
-formating: 
+To start in dev mode:
 
 ```bash
-bun format:write
-bun format:check
+pnpm dev
 ```
 
-eslint, linting"
+## Code Quality
+
+To run code quality checks:
 
 ```bash
-bun lint
+pnpm format:write
+```
+
+To check code quality without applying fixes:
+
+```bash
+pnpm format:check   
+```
+
+## linting
+
+To run linting checks:
+
+```bash
+pnpm lint
+```
+
+## testing(Vitest)
+
+To run tests:
+
+```bash
+pnpm test
 ```

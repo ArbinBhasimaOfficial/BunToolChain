@@ -1,5 +1,5 @@
 {
-  "name": "bunpackagetoolchain",
+  "name": "pnpmpackagetoolchain",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -7,14 +7,14 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "pnpm ./src/index.js",
-    "dev": "pnpm --watch ./src/index.js",
-    "format:write": "prettier --write .",
-    "format:check": "prettier --check .",
-    "lint": "pnpm dlx eslint .",
-    "test": "vitest",
-    "prepare": "husky"
-  },
+      "start": "node ./src/index.js",
+      "dev": "node --watch ./src/index.js",
+      "format:write": "prettier --write .",
+      "format:check": "prettier --check .",
+      "lint": "pnpm dlx eslint .",
+      "test": "vitest",
+      "prepare": "husky"
+    },
   "devDependencies": {
     "@commitlint/config-conventional": "^21.2.0",
     "@eslint/js": "^10.0.1",
