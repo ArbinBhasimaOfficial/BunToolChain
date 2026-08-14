@@ -7,10 +7,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "bun ./src/index.js",
+    "start": "pnpm ./src/index.js",
+    "dev": "pnpm --watch ./src/index.js",
     "format:write": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "bunx eslint .",
+    "lint": "pnpm dlx eslint .",
     "test": "vitest",
     "prepare": "husky"
   },
